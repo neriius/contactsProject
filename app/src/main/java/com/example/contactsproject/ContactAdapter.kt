@@ -1,10 +1,8 @@
 package com.example.contactsproject
 
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.contactsproject.databinding.ContactItemViewBinding
@@ -18,17 +16,14 @@ class ContactAdapter() : RecyclerView.Adapter<ContactAdapter.ContactHolder>() {
         private val binding = ContactItemViewBinding.bind(item)
 
         fun bind(contact: ContactData) {
-            binding.contactPhoneNumber.text = contact.contactPhone
-            binding.Career.text = contact.career
+            binding.contactPhoneNumber.text = contact.contactName
+            binding.phoneNumber.text = contact.phoneNumber
             Glide.with(itemView)
-                .load("http://developer.alexanderklimov.ru/android/images/android_cat.jpg")
+                .load(contact.contactImageUrl)
+                .error(R.drawable.contacts_icon)
+                .circleCrop()
                 .into(binding.contactIcon)
         }
-
-        fun getContactIconView(): ImageView {
-            return binding.contactIcon
-        }
-
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ContactHolder {
