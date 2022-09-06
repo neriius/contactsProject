@@ -5,6 +5,9 @@
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
+    <color name="add_contact_btn_layout_background">#242235</color>
+    <color name="background_contact">#E7E7E7</color>
+    <color name="background_orange">#FB5E06</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 </resources>

@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">ContactsProject</string>
+    <string name="save_btn_txt">SAVE</string>
+    <string name="phone_number_text_input">Phone number</string>
+    <string name="username_hint_text_input">Username</string>
+    <string name="add_contact_txt">Add contact</string>
+    <string name="contact_name">Contact name</string>
+    <string name="phone_number">Phone number</string>
+    <string name="contacts">Contacts</string>
+    <string name="add_contact">add contact</string>
 </resources>

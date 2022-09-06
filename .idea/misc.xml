@@ -3,8 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Programing/android/study/ContactsProject/app/src/main/res/layout/activity_main.xml" value="0.29935125115848005" />
-        <entry key="..\:/Programing/android/study/ContactsProject/app/src/main/res/layout/contact_item_view.xml" value="0.25" />
+        <entry key="..\:/Programing/android/study/ContactsProject/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.208" />
+        <entry key="..\:/Programing/android/study/ContactsProject/app/src/main/res/drawable/circle_corners_bg.xml" value="0.149" />
+        <entry key="..\:/Programing/android/study/ContactsProject/app/src/main/res/drawable/circle_image_view.xml" value="0.256" />
+        <entry key="..\:/Programing/android/study/ContactsProject/app/src/main/res/drawable/circle_shape.xml" value="0.256" />
+        <entry key="..\:/Programing/android/study/ContactsProject/app/src/main/res/drawable/elipse_shape.xml" value="0.18" />
+        <entry key="..\:/Programing/android/study/ContactsProject/app/src/main/res/drawable/ic_launcher_background.xml" value="0.221" />
+        <entry key="..\:/Programing/android/study/ContactsProject/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Programing/android/study/ContactsProject/app/src/main/res/layout/add_contact.xml" value="0.23143115942028986" />
+        <entry key="..\:/Programing/android/study/ContactsProject/app/src/main/res/layout/add_contact_layout.xml" value="0.23143115942028986" />
+        <entry key="..\:/Programing/android/study/ContactsProject/app/src/main/res/layout/contact_item_view.xml" value="0.22" />
       </map>
     </option>
   </component>

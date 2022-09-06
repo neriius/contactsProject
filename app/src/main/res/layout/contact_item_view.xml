@@ -3,51 +3,51 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="16dp"
-    android:background="#B2B2B3"
-    android:gravity="center_vertical"
-    android:orientation="horizontal">
+    android:layout_margin="@dimen/child_layouts_margin"
+    android:background="@drawable/circle_corners_bg">
 
-    <CheckBox
-        android:id="@+id/contact_check_box"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:background="@drawable/elipse_shape"
+    <ImageView
+        android:id="@+id/contact_icon"
+        android:layout_width="@dimen/contact_icon_image_view_width"
+        android:layout_height="@dimen/contact_icon_image_view_height"
+        android:layout_margin="@dimen/views_space_between"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
-    <ImageView
-        android:id="@+id/contact_icon"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_margin="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toRightOf="@id/contact_check_box"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/contact_data_text_input_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toRightOf="@id/contact_icon"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_margin="@dimen/views_space_between"
+        app:layout_constraintBottom_toBottomOf="@id/contact_icon"
+        app:layout_constraintStart_toEndOf="@id/contact_icon"
+        app:layout_constraintTop_toTopOf="@id/contact_icon">
 
         <TextView
-            android:id="@+id/contactPhoneNumber"
+            android:id="@+id/contact_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Contact name" />
+            android:text="@string/contact_name"
+            android:textSize="@dimen/navigation_text_size" />
 
         <TextView
             android:id="@+id/phone_number"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="Phone number" />
+            android:text="@string/phone_number"
+            android:textSize="@dimen/navigation_text_size" />
     </com.google.android.material.textfield.TextInputLayout>
 
+    <ImageButton
+        android:id="@+id/trash_image_btn"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="@dimen/trash_icon_image_view_width"
+        android:layout_height="@dimen/trash_icon_image_view_height"
+        android:scaleType="centerCrop"
+        android:src="@drawable/trash"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
