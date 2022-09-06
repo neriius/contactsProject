@@ -21,7 +21,9 @@
             android:textSize="@dimen/main_text_size"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
 
         <ImageButton
             style="@style/Widget.AppCompat.Button.Borderless"
